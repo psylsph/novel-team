@@ -57,6 +57,9 @@ Each persona lives in `team/` with a full profile — distinct voice, style, kno
 | `team/ROSTER.md` | Full team member directory |
 | `references/` | Research methodology, workflow examples |
 | `templates/` | Reusable templates (chapter brief, character profile, etc.) |
+| `CHANGELOG.md` | Version history and release notes |
+| `CONTRIBUTING.md` | How to contribute — personas, workflows, templates |
+| `LICENSE` | MIT License — free to use, modify, share |
 
 ---
 
@@ -180,6 +183,21 @@ Clone or copy this repository, then load `SKILL.md` as your agent's context or i
 ```
 
 See `QUICKSTART.md` for full usage patterns and team member reference.
+
+---
+
+## Related Projects
+
+Other writing tools from the same author:
+
+| Project | Description |
+|---------|-------------|
+| [autonomous-booksmith](https://github.com/psylsph/autonomous-booksmith) | Autonomous multi-agent novel writing pipeline |
+| [ai-book-writer](https://github.com/psylsph/ai-book-writer) | Experiment: full novel generation via AutoGen agents |
+| [novel-writer](https://github.com/psylsph/novel-writer) | Novel writing tool |
+| [BookAgent](https://github.com/psylsph/BookAgent) | Book-oriented AI agent system |
+| [StoryFoundry](https://github.com/psylsph/StoryFoundry) | Story creation and development framework |
+| [prosewrite](https://github.com/psylsph/prosewrite) | Prose writing assistant |
 
 ---
 
