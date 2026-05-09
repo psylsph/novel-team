@@ -7,6 +7,8 @@
 
 This repository contains the SKILL.md, persona files, templates, and reference material that power the novel-team workflow. Designed for use with AI agents (Hermes, Claude, or compatible systems), it gives you a dedicated team of eight publishing professionals with distinct personalities, clear expertise boundaries, and a rigorous stage-based development process.
 
+> **Looking for the best LLM for creative writing?** Check the [EQ-Bench Creative Writing leaderboard](https://eqbench.com/creative_writing.html) for model recommendations ranked on prose quality, dialogue, and narrative — so you can pair the right model with this team.
+
 ---
 
 ## What's Inside
