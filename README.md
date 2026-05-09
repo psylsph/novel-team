@@ -1,56 +1,64 @@
-# Novel Team - Complete System
+# Novel Team — Complete Professional Novel Development System
 
-Congratulations! You now have a complete professional novel development team and workflow system.
+[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](SKILL.md)
+[![Category](https://img.shields.io/badge/category-creative-ff69b4.svg)](.)
 
-## What You Have
+**A full professional editorial team and 10-stage development pipeline, delivered as a structured knowledge system for AI-assisted novel writing.**
 
-### 🎭 The Team (8 Professional Members)
+This repository contains the SKILL.md, persona files, templates, and reference material that power the novel-team workflow. Designed for use with AI agents (Hermes, Claude, or compatible systems), it gives you a dedicated team of eight publishing professionals with distinct personalities, clear expertise boundaries, and a rigorous stage-based development process.
 
-**Editorial Team:**
-- **Alex** - Developmental Editor (structure, character, pacing)
-- **Jordan** - Line Editor (prose, flow, voice)
-- **Taylor** - Copyeditor (grammar, technical polish)
-- **Morgan** - Proofreader (final QC)
+---
 
-**Specialist Team:**
-- **Riley** - Research Assistant (authenticity, information)
-- **Casey** - Continuity Editor (consistency, tracking)
-- **Quinn** - Fact Checker (verification, accuracy)
+## What's Inside
 
-**Support Team:**
-- **Sam** - Writing Coach (goals, accountability, encouragement)
+### 🎭 The Team (8 Professional Personas)
 
-### 📋 The Workflow (10 Stages)
+| Role | Name | Expertise |
+|------|------|-----------|
+| **Developmental Editor** | Alex | Story structure, character arcs, pacing, plot logic |
+| **Line Editor** | Jordan | Prose flow, word choice, rhythm, voice consistency |
+| **Copyeditor** | Taylor | Grammar, punctuation, style guide, technical polish |
+| **Proofreader / Beta Reader** | Morgan | Final error check, formatting, fresh-eyes read |
+| **Research Assistant** | Riley | Historical/technical research, setting authenticity |
+| **Continuity Editor** | Casey | Timeline, character tracking, world-building consistency |
+| **Fact Checker** | Quinn | Factual accuracy, technical detail verification |
+| **Writing Coach** | Sam | Goal setting, accountability, overcoming blocks |
 
-1. **Initial Seed** - Your book concept/idea
-2. **Concept Development** - Transform seed into solid foundation
-3. **Character Development** - Create compelling, multidimensional characters
-4. **Story Structure** - Build narrative framework
-5. **Research Deep Dive** - Comprehensive reference material
-6. **First Draft** - Complete manuscript (forward motion!)
-7. **Developmental Edit** - Strengthen story and structure
-8. **Line Editing** - Enhance prose quality
-9. **Copyediting** - Technical polish
-10. **Proofreading** - Final error check
-11. **Final Review** - Author approval
+Each persona lives in `team/` with a full profile — distinct voice, style, knowledge boundaries, and communication approach.
+
+### 📋 The 10-Stage Workflow
+
+| # | Stage | Lead | Deliverable |
+|---|-------|------|-------------|
+| 0 | Initial Seed | Author | Raw concept captured |
+| 1 | Concept Development | Alex + Riley + Sam | Concept clarification document |
+| 2 | Character Development | Alex + Casey + Riley | Complete character profiles |
+| 3 | Story Structure | Alex + Casey | Chapter plan + scene breakdown |
+| 3c | Planning Approval | All team + Author | Green light to write |
+| 4 | Research Deep Dive | Riley + Quinn | Research repository |
+| 4.5 | World Outline | Riley + Alex + Casey | World outline document |
+| 5 | First Draft | Author + Sam | Complete manuscript |
+| 5b | Cross-Chapter Continuity | Casey | Consistency verified every 5-10 ch |
+| 5c | Act Break Full-Stack Review | All team | Comprehensive quality gate |
+| 6 | Developmental Edit | Alex + Casey + Riley | Revised draft |
+| 7 | Line Editing | Jordan + Taylor | Line-edited draft |
+| 8 | Copyediting | Taylor + Quinn + Casey | Copyedited draft |
+| 9 | Proofreading | Morgan | Final error-free draft |
+| 10 | Final Review | Author | Approved manuscript |
 
 ### 📁 Documentation
 
-- **SKILL.md** - Overview and introduction
-- **QUICKSTART.md** - Quick reference for using team members
-- **WORKFLOW.md** - Complete 10-stage workflow with detailed descriptions
-- **EXAMPLES.md** - Real examples of the team in action (5 detailed scenarios)
-- **team/ROSTER.md** - Complete team member profiles
-- **team/** - Individual persona files for all 8 team members
-- **references/** - Research methodology and role definitions
+| File | Description |
+|------|-------------|
+| `SKILL.md` | Complete system documentation (workflow, templates, rules) |
+| `QUICKSTART.md` | Quick reference — team members, usage patterns |
+| `WORKFLOW.md` | Detailed walkthrough of all stages with checklists |
+| `EXAMPLES.md` | Real scenarios showing the team in action |
+| `team/ROSTER.md` | Full team member directory |
+| `references/` | Research methodology, workflow examples |
+| `templates/` | Reusable templates (chapter brief, character profile, etc.) |
 
-### 🗂️ Knowledge Repository
-
-- **characters/** - Store character profiles
-- **settings/** - Store world-building details
-- **research/** - Store reference material
-- **timelines/** - Store continuity tracking
-- **concepts/** - Store story ideas and development
+---
 
 ## How to Use
 
@@ -62,13 +70,11 @@ Congratulations! You now have a complete professional novel development team and
 Then share your concept, character, setting, or scene.
 ```
 
-The team will assemble and begin the collaborative process!
-
 ### Option 2: Consult a Team Member
 
 ```
 "As Jordan, review this passage and improve the prose..."
-"Riley, I need research on [topic]..."
+"Riley, I need research on submarine operations..."
 "Casey, check if this detail matches what we established earlier..."
 ```
 
@@ -78,169 +84,111 @@ The team will assemble and begin the collaborative process!
 "Team meeting: Alex, Casey, and Riley to discuss this scene..."
 ```
 
-## Key Features
+### Option 4: Progressive Refinement
 
-### ✅ Professional Quality
-- Based on real publishing industry roles
-- Traditional editorial workflow
-- Professional collaboration patterns
-
-### ✅ Distinct Personalities
-- Each team member has unique voice
-- Different communication styles
-- Clear expertise boundaries
-- Complementary strengths
-
-### ✅ Flexible Workflow
-- Linear or iterative progression
-- Skip stages if not needed
-- Return to earlier stages
-- Customize to your process
-
-### ✅ Author Control
-- You maintain creative control
-- Team advises, you decide
-- No overstepping boundaries
-- Collaborative, not directive
-
-## What Makes This Different
-
-### Unlike Writing Frameworks
-- **NOT** a step-by-step system you must follow
-- **NOT** prescriptive about your writing process
-- **NOT** a replacement for your creativity
-- **IS** professional support for YOUR vision
-
-### Unlike Beta Readers
-- **Professional** editorial expertise
-- **Distinct** specialist perspectives
-- **Consistent** feedback over time
-- **Comprehensive** coverage of manuscript needs
-
-### Unlike AI Writing Tools
-- **No** AI-generated content
-- **No** taking over your story
-- **No** generic feedback
-- **IS** professional simulation that supports YOUR writing
-
-## The Team in Action
-
-Here's what the team can do together:
-
-**Alex (Developmental)** spots structural issues
-**Riley (Research)** finds authentic details
-**Casey (Continuity)** tracks every character detail
-**Jordan (Line Edit)** enhances your prose while keeping your voice
-**Taylor (Copyedit)** catches technical errors
-**Quinn (Fact Check)** verifies accuracy
-**Sam (Coach)** keeps you moving and encouraged
-**Morgan (Proofread)** catches final errors
-
-All while **YOU** maintain creative control and make final decisions.
-
-## Real Examples Included
-
-See **EXAMPLES.md** for:
-1. Starting from a concept seed
-2. Character development session
-3. First draft checkpoint
-4. Line editing demonstration
-5. Complex scene team meeting
-
-Each example shows real team dialogue and collaboration.
-
-## Try It Now
-
-**With a book seed:**
 ```
-"I have a book seed. Let's start with Stage 1."
-[Share your concept]
+1. Alex: "Does this scene work structurally?"
+2. Riley: "How can I make the details more authentic?"
+3. Jordan: "Now improve the prose flow..."
+4. Taylor: "Finally, polish the technical details..."
 ```
-
-**With work in progress:**
-```
-"Alex, review this chapter structure..."
-"Jordan, improve the prose in this passage..."
-"Casey, check the consistency of..."
-```
-
-**With a specific question:**
-```
-"Riley, what would I need to research for..."
-"Quinn, is this technical detail accurate..."
-"Sam, I'm stuck. Help me break through..."
-```
-
-## What Happens Next
-
-When you request a team member:
-1. Agent loads their persona file
-2. Adopts their personality and expertise
-3. Responds in their voice
-4. Respects their professional boundaries
-5. Provides targeted, professional feedback
-
-## Team Combinations
-
-### For Early Development
-Alex + Sam + Riley (structure, motivation, research)
-
-### For Drafting
-Sam (coach) + as-needed consultations
-
-### For Developmental Edit
-Alex + Casey + Riley (big picture, consistency, authenticity)
-
-### For Polishing
-Jordan + Taylor (prose + technical)
-
-### For Final Review
-Morgan + Quinn (errors + facts)
-
-### For Complex Scenes
-Full team meeting for comprehensive input
-
-## Important Notes
-
-1. **Your creativity is central** - The team supports, doesn't replace
-2. **Professional standards** - Based on real publishing workflows
-3. **Flexible process** - Adapt to your needs
-4. **Distinct perspectives** - Each team member has unique value
-5. **Collaborative spirit** - Team works WITH you, not FOR you
-
-## File Reference
-
-**Main Documentation:**
-- SKILL.md (this file) - System overview
-- QUICKSTART.md - Team member quick reference
-- WORKFLOW.md - Complete 10-stage workflow
-- EXAMPLES.md - Real examples in action
-
-**Team Member Files:**
-- team/editorial/ - Alex, Jordan, Taylor, Morgan
-- team/specialists/ - Riley, Casey, Quinn
-- team/support/ - Sam
-- team/ROSTER.md - Complete team guide
-
-**Research:**
-- references/role-research-methodology.md - How roles were defined
-
-**Knowledge Storage:**
-- characters/ - Character profiles
-- settings/ - World-building details
-- research/ - Reference material
-- timelines/ - Continuity tracking
-- concepts/ - Story development
 
 ---
 
-## Ready to Begin?
+## Key Principles
 
-Your team is ready when you are.
+### 🔴 The Review Gate (Highest Priority)
 
-**Share a book seed and start the journey.** 🚀
+Every deliverable must go through full team review before being presented to the author:
+
 ```
-"I have a book seed. Let's start with Stage 1: Concept Development."
+CREATE → REVIEW → FIX → PRESENT TO AUTHOR → WAIT FOR CONFIRMATION
 ```
 
-Your Novel Team awaits. 🎭✨
+This is non-negotiable. No skipping, no rubber-stamping, no "just a draft" exceptions.
+
+### 🔍 The Perception Phase
+
+Each reviewer must actually read the work critically — quote specific lines, raise minimum 5 hard questions, flag continuity issues with references. Superficial reviews are rejected.
+
+### 🎯 Quality Over Word Count
+
+Word targets are guides, not gates. A tight 2,200-word chapter that earns every sentence beats a padded 3,000-word chapter with filler.
+
+### 🚦 Author Control at Every Stage
+
+The team advises. The author decides. No gate passes without author confirmation.
+
+---
+
+## Repository Structure
+
+```
+novel-team/
+├── README.md                  # This file
+├── SKILL.md                   # Complete system (workflow, templates, rules)
+├── QUICKSTART.md              # Quick reference guide
+├── WORKFLOW.md                # Detailed stage walkthrough
+├── EXAMPLES.md                # Real team-in-action scenarios
+├── team/
+│   ├── ROSTER.md              # Team directory
+│   ├── editorial/             # Alex, Jordan, Taylor, Morgan
+│   ├── specialists/           # Riley, Casey, Quinn
+│   └── support/               # Sam
+├── references/                # Research methodology, examples
+└── templates/                 # Chapter brief, character profile, etc.
+```
+
+For book projects, the skill goes in the agent's skills directory and project files go in a separate book project directory:
+
+```
+SKILL:  ~/.hermes/skills/creative/novel-team/   ← templates, personas, workflows
+PROJECT: ~/writing/your-novel/                   ← chapters, characters, settings
+```
+
+---
+
+## Installation
+
+### For Hermes Agent
+
+```bash
+# The skill is available as part of the Hermes skill registry
+hermes skills download novel-team
+```
+
+### For Direct Use
+
+Clone or copy this repository, then load `SKILL.md` as your agent's context or instruction file.
+
+---
+
+## Requirements
+
+- An AI agent system capable of persona adoption (Hermes, Claude, or compatible)
+- For the full workflow: ability to create and manage project files
+- 8 team persona files (included) for distinct reviewer voices
+
+---
+
+## Quick Start
+
+```
+"Alex, review this chapter outline and tell me if the pacing works."
+"I have a thriller concept: burned spy discovers his agency is hunting him."
+"Team meeting: Alex, Casey, and Riley — let's plan the opening scene."
+```
+
+See `QUICKSTART.md` for full usage patterns and team member reference.
+
+---
+
+## License
+
+Part of the psylsph/novel-team project. See repository metadata for details.
+
+---
+
+<div align="center">
+<i>Your Novel Team awaits. 🎭✨</i>
+</div>
