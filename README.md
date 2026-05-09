@@ -199,6 +199,13 @@ Other writing tools from the same author:
 | [StoryFoundry](https://github.com/psylsph/StoryFoundry) | Story creation and development framework |
 | [prosewrite](https://github.com/psylsph/prosewrite) | Prose writing assistant |
 
+### Model Evaluation & Benchmarking
+
+| Resource | Description |
+|----------|-------------|
+| [EQ-Bench Creative Writing](https://eqbench.com/creative_writing.html) | Creative writing model evaluation leaderboard — see how LLMs rank on prose, dialogue, and narrative quality |
+| [EQ-Bench](https://github.com/EQ-bench) | Open-source model evaluation suite — emotional intelligence and creative writing benchmarks for LLMs |
+
 ---
 
 ## License
