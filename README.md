@@ -6,6 +6,20 @@ This is the novel-team skill for pi. It provides a complete novel production pip
 
 The skill itself is self-contained in this directory. See `SKILL.md` for the rules card and `references/` for stage details, templates, and examples.
 
+## Session Continuity (AGENTS.md)
+
+Every project using this skill **must** have an `AGENTS.md` file in its root directory (SKILL.md Rule 4). This file is the first thing a new agent reads when a session restarts — it explains what the project is, where the skill lives, and how to resume work.
+
+When a new agent session starts in a project directory, pi's AGENTS.md convention means the agent automatically reads this file. The AGENTS.md tells it:
+
+1. This is a novel project using the novel-team skill
+2. Where to find the skill (`~/.pi/agent/skills/novel-team/SKILL.md`)
+3. To read `progress.md` for current state
+4. To read `rolling-summary.md` if drafting
+5. What stage the project is at and what to do next
+
+This means **agent restarts don't lose context**. A fresh session reads AGENTS.md, loads the skill, reads progress.md, and picks up exactly where the last session left off.
+
 ## Optional: Workflow Checker Agent
 
 The most common problem with complex skills is the main agent forgetting workflow steps — skipping reviews, missing checklists, jumping ahead. The skill's `progress.md` tracking (Rule 3) helps, but a separate checker agent with its own clean context window is more reliable.
@@ -79,7 +93,7 @@ Copy the checklist from stages.md. Mark each item [x] or [ ] based on what progr
 ### Review Gate
 - [x] or [ ] Team review completed
 - [x] or [ ] All reviewers listed in SKILL.md Rule 1 table were used
-- [x] or [ ] Review output follows Rule 9 format
+- [x] or [ ] Review output follows Rule 10 format
 - [x] or [ ] Fixes applied before presentation
 
 ### Issues Found
@@ -127,7 +141,7 @@ Use the subagent tool with novel-checker to audit the current workflow state. Pr
 
 ```
 novel-team/
-├── SKILL.md                              # Rules card (always loaded)
+├── SKILL.md                              # Rules card (always loaded, 10 rules)
 ├── README.md                             # This file — installation & setup
 ├── references/
 │   ├── stages.md                         # Full 16-stage plan with checklists
@@ -149,4 +163,23 @@ novel-team/
     ├── character-profile.md
     ├── setting-profile.md
     └── rolling-summary.md
+```
+
+## Project Directory Structure
+
+When starting a new book, the project directory will contain:
+
+```
+book-name/
+├── AGENTS.md                # Session continuity — agent reads this on restart
+├── progress.md              # Current stage, status, next action
+├── outline.md               # Validated chapter-by-chapter outline
+├── story-bible.md           # Master reference document
+├── world-outline.md         # Systematic worldbuilding
+├── rolling-summary.md       # Chapter-by-chapter state tracking
+├── characters/              # One file per character
+├── settings/                # One file per location
+├── research/                # Organized by topic
+├── chapters/                # chapter_01.md, chapter_02.md, ...
+└── concepts/                # Seed, concept clarification
 ```
