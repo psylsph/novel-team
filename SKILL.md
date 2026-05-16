@@ -2,7 +2,7 @@
 name: novel-team
 category: creative
 description: "Complete novel development toolkit with 8 professional team personas, a 16-stage writing plan with checklists, structured review workflow, progress tracking, rolling summary system, and on-demand reference loading for collaborative novel writing."
-version: 4.0.0
+version: 4.1.0
 author: Stuart
 tags: [writing, collaboration, worldbuilding, reference, workflow, review]
 ---
