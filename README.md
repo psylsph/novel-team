@@ -1,221 +1,152 @@
-# Novel Team — Complete Professional Novel Development System
+# Novel Team — Installation & Setup
 
-[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](SKILL.md)
-[![Category](https://img.shields.io/badge/category-creative-ff69b4.svg)](.)
+This is the novel-team skill for pi. It provides a complete novel production pipeline with 8 professional team roles and a 16-stage development process.
 
-**A full professional editorial team and 10-stage development pipeline, delivered as a structured knowledge system for AI-assisted novel writing.**
+## Skill Files
 
-This repository contains the SKILL.md, persona files, templates, and reference material that power the novel-team workflow. Designed for use with AI agents (Hermes, Claude, or compatible systems), it gives you a dedicated team of eight publishing professionals with distinct personalities, clear expertise boundaries, and a rigorous stage-based development process.
+The skill itself is self-contained in this directory. See `SKILL.md` for the rules card and `references/` for stage details, templates, and examples.
 
-> **Looking for the best LLM for creative writing?** Check the [EQ-Bench Creative Writing leaderboard](https://eqbench.com/creative_writing.html) for model recommendations ranked on prose quality, dialogue, and narrative — so you can pair the right model with this team.
+## Optional: Workflow Checker Agent
 
+The most common problem with complex skills is the main agent forgetting workflow steps — skipping reviews, missing checklists, jumping ahead. The skill's `progress.md` tracking (Rule 3) helps, but a separate checker agent with its own clean context window is more reliable.
+
+### How It Works
+
+A **novel-checker** agent runs in an isolated pi subprocess. It doesn't share the main agent's context — it reads only the rules and the current project state, then reports what's been missed. The main agent calls it before presenting any deliverable to the author:
+
+```
+Use novel-checker to audit the workflow before we present to the author
+```
+
+### Setup
+
+**1. Install the subagent extension** (if not already installed):
+
+```bash
+mkdir -p ~/.pi/agent/extensions/subagent
+mkdir -p ~/.pi/agent/agents
+mkdir -p ~/.pi/agent/prompts
+
+EXAMPLES="$(npm root -g)/@earendil-works/pi-coding-agent/examples/extensions/subagent"
+
+ln -sf "$EXAMPLES/index.ts" ~/.pi/agent/extensions/subagent/index.ts
+ln -sf "$EXAMPLES/agents.ts" ~/.pi/agent/extensions/subagent/agents.ts
+
+for f in "$EXAMPLES"/agents/*.md; do
+  ln -sf "$f" ~/.pi/agent/agents/$(basename "$f")
+done
+
+for f in "$EXAMPLES"/prompts/*.md; do
+  ln -sf "$f" ~/.pi/agent/prompts/$(basename "$f")
+done
+```
+
+**2. Create the novel-checker agent:**
+
+```bash
+cat > ~/.pi/agent/agents/novel-checker.md << 'EOF'
+---
+name: novel-checker
+description: Audits novel-team workflow compliance — checks that no steps were skipped, the review gate was followed, and progress.md is accurate. Use before presenting any deliverable to the author.
+tools: read, grep, find, ls
+model: claude-sonnet-4-5
 ---
 
-## What's Inside
+You are a novel-team workflow auditor. Your job is to verify that the agent working on a novel has followed all required steps and not skipped anything.
 
-### 🎭 The Team (8 Professional Personas)
+You will be given:
+1. The path to the project directory
+2. The current stage or deliverable being worked on
 
-| Role | Name | Expertise |
-|------|------|-----------|
-| **Developmental Editor** | Alex | Story structure, character arcs, pacing, plot logic |
-| **Line Editor** | Jordan | Prose flow, word choice, rhythm, voice consistency |
-| **Copyeditor** | Taylor | Grammar, punctuation, style guide, technical polish |
-| **Proofreader / Beta Reader** | Morgan | Final error check, formatting, fresh-eyes read |
-| **Research Assistant** | Riley | Historical/technical research, setting authenticity |
-| **Continuity Editor** | Casey | Timeline, character tracking, world-building consistency |
-| **Fact Checker** | Quinn | Factual accuracy, technical detail verification |
-| **Writing Coach** | Sam | Goal setting, accountability, overcoming blocks |
+**What you must do:**
 
-Each persona lives in `team/` with a full profile — distinct voice, style, knowledge boundaries, and communication approach.
+1. Read the project's `progress.md` — this is the agent's state file
+2. Read the skill rules at `~/.pi/agent/skills/novel-team/SKILL.md`
+3. Read the relevant stage details at `~/.pi/agent/skills/novel-team/references/stages.md`
+4. Cross-check progress.md against the stage checklist
+5. Verify the review gate was followed for the current deliverable
 
-### 📋 The 10-Stage Workflow
+**Output format:**
 
-| # | Stage | Lead | Deliverable |
-|---|-------|------|-------------|
-| 0 | Initial Seed | Author | Raw concept captured |
-| 1 | Concept Development | Alex + Riley + Sam | Concept clarification document |
-| 2 | Character Development | Alex + Casey + Riley | Complete character profiles |
-| 3 | Story Structure | Alex + Casey | Chapter plan + scene breakdown |
-| 3c | Planning Approval | All team + Author | Green light to write |
-| 4 | Research Deep Dive | Riley + Quinn | Research repository |
-| 4.5 | World Outline | Riley + Alex + Casey | World outline document |
-| 5 | First Draft | Author + Sam | Complete manuscript |
-| 5b | Cross-Chapter Continuity | Casey | Consistency verified every 5-10 ch |
-| 5c | Act Break Full-Stack Review | All team | Comprehensive quality gate |
-| 6 | Developmental Edit | Alex + Casey + Riley | Revised draft |
-| 7 | Line Editing | Jordan + Taylor | Line-edited draft |
-| 8 | Copyediting | Taylor + Quinn + Casey | Copyedited draft |
-| 9 | Proofreading | Morgan | Final error-free draft |
-| 10 | Final Review | Author | Approved manuscript |
+## Workflow Audit: [Deliverable Name]
 
-### 📁 Documentation
+### Stage Progress
+- [x] or [ ] for each completed/skipped stage
 
-| File | Description |
-|------|-------------|
-| `SKILL.md` | Complete system documentation (workflow, templates, rules) |
-| `QUICKSTART.md` | Quick reference — team members, usage patterns |
-| `WORKFLOW.md` | Detailed walkthrough of all stages with checklists |
-| `EXAMPLES.md` | Real scenarios showing the team in action |
-| `team/ROSTER.md` | Full team member directory |
-| `references/` | Research methodology, workflow examples |
-| `templates/` | Reusable templates (chapter brief, character profile, etc.) |
-| `CHANGELOG.md` | Version history and release notes |
-| `CONTRIBUTING.md` | How to contribute — personas, workflows, templates |
-| `LICENSE` | MIT License — free to use, modify, share |
+### Current Stage Checklist
+Copy the checklist from stages.md. Mark each item [x] or [ ] based on what progress.md and the project files show.
 
----
+### Review Gate
+- [x] or [ ] Team review completed
+- [x] or [ ] All reviewers listed in SKILL.md Rule 1 table were used
+- [x] or [ ] Review output follows Rule 9 format
+- [x] or [ ] Fixes applied before presentation
 
-## How to Use
+### Issues Found
+1. [CRITICAL / WARNING / NOTE]: Description
+2. ...
 
-### Option 1: Start a New Novel
+### Verdict: [PASS — ready to present / FAIL — fix these first]
 
-```
-"I have a book seed. Let's start with Stage 1: Concept Development."
-
-Then share your concept, character, setting, or scene.
+**Rules:**
+- Be strict. If progress.md doesn't explicitly say something was done, treat it as not done.
+- The review gate is the most common failure point. Check it carefully.
+- If the stage checklist in stages.md has an item that isn't reflected in progress.md or project files, flag it.
+- Do not fix anything. Only report what's missing or wrong.
+- Never approve work that hasn't been through team review. This is non-negotiable.
+EOF
 ```
 
-### Option 2: Consult a Team Member
+**3. Verify it works:**
 
-```
-"As Jordan, review this passage and improve the prose..."
-"Riley, I need research on submarine operations..."
-"Casey, check if this detail matches what we established earlier..."
+```bash
+pi -p "list the available subagents"
 ```
 
-### Option 3: Hold a Team Meeting
+You should see `novel-checker` in the list alongside `scout`, `planner`, `reviewer`, and `worker`.
 
+### When to Call the Checker
+
+The main agent should call the checker:
+- **Before presenting any deliverable to the author** (after team review, before the WAIT step)
+- **Before advancing to a new stage** (verify the current stage is complete)
+- **After any long context window** (if the agent has been working for many turns)
+
+Example invocation:
 ```
-"Team meeting: Alex, Casey, and Riley to discuss this scene..."
-```
-
-### Option 4: Progressive Refinement
-
-```
-1. Alex: "Does this scene work structurally?"
-2. Riley: "How can I make the details more authentic?"
-3. Jordan: "Now improve the prose flow..."
-4. Taylor: "Finally, polish the technical details..."
-```
-
----
-
-## Key Principles
-
-### 🔴 The Review Gate (Highest Priority)
-
-Every deliverable must go through full team review before being presented to the author:
-
-```
-CREATE → REVIEW → FIX → PRESENT TO AUTHOR → WAIT FOR CONFIRMATION
+Use the subagent tool with novel-checker to audit the current workflow state. Project directory: ~/novels/my-book/. Current deliverable: Chapter 3 first draft.
 ```
 
-This is non-negotiable. No skipping, no rubber-stamping, no "just a draft" exceptions.
+### Customisation
 
-### 🔍 The Perception Phase
+- **Model:** Change `model` in the agent file to use a cheaper model for routine checks (e.g., `claude-haiku-4-5`) or a more capable one for complex audits
+- **Scope:** The checker only reads files — it cannot modify anything. It's purely an auditor
+- **House style:** If you've added a `references/house-style-*.md` file to the skill, the checker can verify prose compliance too — add instructions to the agent definition
 
-Each reviewer must actually read the work critically — quote specific lines, raise minimum 5 hard questions, flag continuity issues with references. Superficial reviews are rejected.
-
-### 🎯 Quality Over Word Count
-
-Word targets are guides, not gates. A tight 2,200-word chapter that earns every sentence beats a padded 3,000-word chapter with filler.
-
-### 🚦 Author Control at Every Stage
-
-The team advises. The author decides. No gate passes without author confirmation.
-
----
-
-## Repository Structure
+## File Structure
 
 ```
 novel-team/
-├── README.md                  # This file
-├── SKILL.md                   # Complete system (workflow, templates, rules)
-├── QUICKSTART.md              # Quick reference guide
-├── WORKFLOW.md                # Detailed stage walkthrough
-├── EXAMPLES.md                # Real team-in-action scenarios
+├── SKILL.md                              # Rules card (always loaded)
+├── README.md                             # This file — installation & setup
+├── references/
+│   ├── stages.md                         # Full 16-stage plan with checklists
+│   ├── house-style-higgins.md            # Jack Higgins house style reference
+│   ├── pitfalls.md                       # Common mistakes and how to avoid them
+│   ├── examples.md                       # Real workflow examples
+│   ├── fast-track-from-outline.md        # Accelerated workflow for existing outlines
+│   ├── chapter-by-chapter-drafting.md    # Detailed drafting process
+│   ├── autonomous-workflow-example.md    # Example of autonomous team resolution
+│   ├── act-break-review-results-example.md # Example act-break review report
+│   └── role-research-methodology.md      # How team roles were defined
 ├── team/
-│   ├── ROSTER.md              # Team directory
-│   ├── editorial/             # Alex, Jordan, Taylor, Morgan
-│   ├── specialists/           # Riley, Casey, Quinn
-│   └── support/               # Sam
-├── references/                # Research methodology, examples
-└── templates/                 # Chapter brief, character profile, etc.
+│   ├── ROSTER.md                         # Assignment table and role boundaries
+│   ├── editorial/                        # Alex, Jordan, Taylor, Morgan
+│   ├── specialists/                      # Riley, Casey, Quinn
+│   └── support/                          # Sam
+└── templates/                            # Reusable document templates
+    ├── chapter-brief.md
+    ├── character-profile.md
+    ├── setting-profile.md
+    └── rolling-summary.md
 ```
-
-For book projects, the skill goes in the agent's skills directory and project files go in a separate book project directory:
-
-```
-SKILL:  ~/.hermes/skills/creative/novel-team/   ← templates, personas, workflows
-PROJECT: ~/writing/your-novel/                   ← chapters, characters, settings
-```
-
----
-
-## Installation
-
-### For Hermes Agent
-
-```bash
-# The skill is available as part of the Hermes skill registry
-hermes skills download novel-team
-```
-
-### For Direct Use
-
-Clone or copy this repository, then load `SKILL.md` as your agent's context or instruction file.
-
----
-
-## Requirements
-
-- An AI agent system capable of persona adoption (Hermes, Claude, or compatible)
-- For the full workflow: ability to create and manage project files
-- 8 team persona files (included) for distinct reviewer voices
-
----
-
-## Quick Start
-
-```
-"Alex, review this chapter outline and tell me if the pacing works."
-"I have a thriller concept: burned spy discovers his agency is hunting him."
-"Team meeting: Alex, Casey, and Riley — let's plan the opening scene."
-```
-
-See `QUICKSTART.md` for full usage patterns and team member reference.
-
----
-
-## Related Projects
-
-Other writing tools from the same author:
-
-| Project | Description |
-|---------|-------------|
-| [autonomous-booksmith](https://github.com/psylsph/autonomous-booksmith) | Autonomous multi-agent novel writing pipeline |
-| [ai-book-writer](https://github.com/psylsph/ai-book-writer) | Experiment: full novel generation via AutoGen agents |
-| [novel-writer](https://github.com/psylsph/novel-writer) | Novel writing tool |
-| [BookAgent](https://github.com/psylsph/BookAgent) | Book-oriented AI agent system |
-| [StoryFoundry](https://github.com/psylsph/StoryFoundry) | Story creation and development framework |
-| [prosewrite](https://github.com/psylsph/prosewrite) | Prose writing assistant |
-
-### Model Evaluation & Benchmarking
-
-| Resource | Description |
-|----------|-------------|
-| [EQ-Bench Creative Writing](https://eqbench.com/creative_writing.html) | Creative writing model evaluation leaderboard — see how LLMs rank on prose, dialogue, and narrative quality |
-| [EQ-Bench](https://github.com/EQ-bench) | Open-source model evaluation suite — emotional intelligence and creative writing benchmarks for LLMs |
-
----
-
-## License
-
-Part of the psylsph/novel-team project. See repository metadata for details.
-
----
-
-<div align="center">
-<i>Your Novel Team awaits. 🎭✨</i>
-</div>

@@ -81,5 +81,5 @@
 - Scene 1: ~[X] words
 - Scene 2: ~[X] words
 - Scene 3: ~[X] words
-- **Total target:** 2,500-3,000 words
+- **Total target:** 2,000-2,500 words
 - **Verify with:** `wc -w <chapter-file>` after writing

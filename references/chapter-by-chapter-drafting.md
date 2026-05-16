@@ -43,7 +43,7 @@ The brief is saved in `chapter-briefs/ch_NN-brief.md` for reference. It ensures 
 
 ### 2. Write the Chapter
 
-- Target: 2,500-3,000 words per chapter (verify with `wc -w <filename>`)
+- Target: 2,000-2,500 words per chapter (verify with `wc -w <filename>`)
 - Apply team editorial standards as you write:
   - **Alex:** Is this scene advancing the structure/arc?
   - **Jordan:** Is the prose flowing? Voice consistent?

@@ -48,7 +48,7 @@ Extract from your outline and create structured reference files:
 ### Step 2: Write Chapters Directly
 
 **DO NOT use autonomous-booksmith** - that's for seed→full-development
-**DO write directly** at 2,000-5,000 words per chapter
+**DO write directly** at 2,000-2,500 words per chapter
 
 **Apply team standards as you write:**
 - **Alex (Developmental):** Is this scene advancing structure/arc?
