@@ -17,6 +17,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 - [ ] Author's vision documented (tone, genre, comps, central conflict)
 - [ ] Alex has done initial potential assessment
 - [ ] Research needs identified (Riley)
+- [ ] AGENTS.md created in project root (session continuity — see SKILL.md Rule 4)
 - [ ] progress.md created with Stage 0 status
 
 **Deliverable:** Seed document in project `concepts/`

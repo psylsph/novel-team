@@ -78,7 +78,56 @@ Stage 10 — Final Review (author approval)
 
 **Update progress.md after every action.** This is your memory. If you're unsure what to do next, read progress.md.
 
-## Rule 4: Team Assignment
+## Rule 4: Session Continuity (AGENTS.md)
+
+**At the start of every project**, create `<project>/AGENTS.md`. This file is the first thing a new agent reads when a session restarts. It tells the agent exactly what this project is, where to find the skill, and what to read to resume work.
+
+```markdown
+# AGENTS.md — [Book Title]
+
+## What This Project Is
+This is a novel being developed using the novel-team skill for pi.
+
+## How to Resume Work
+1. Read this file first
+2. Load the novel-team skill: read `~/.pi/agent/skills/novel-team/SKILL.md`
+3. Read the project status: read `progress.md` in this directory
+4. Read the rolling summary (if drafting): read `rolling-summary.md`
+5. Pick up where progress.md says you left off
+
+## Current Status
+- **Stage:** [current stage number and name]
+- **Last completed action:** [what was done last]
+- **Next action:** [what needs to happen next]
+- **Pending author confirmation:** [yes/no — for what]
+
+## Key Files
+- `progress.md` — Always read this first. Current stage, status, next action.
+- `rolling-summary.md` — Chapter-by-chapter state tracking (updated after each chapter)
+- `story-bible.md` — Master reference: characters, timeline, settings, plot threads
+- `outline.md` — Validated chapter-by-chapter outline
+- `world-outline.md` — Worldbuilding and research
+- `characters/` — Individual character profiles
+- `chapters/` — Draft chapter files
+- `concepts/seed.md` — Original book seed from the author
+
+## Skill Location
+The novel-team skill lives at: `~/.pi/agent/skills/novel-team/`
+
+The rules card is: `~/.pi/agent/skills/novel-team/SKILL.md`
+
+Stage details are in: `~/.pi/agent/skills/novel-team/references/stages.md`
+
+House style is in: `~/.pi/agent/skills/novel-team/references/house-style-higgins.md`
+
+## Team
+8 professional personas (Alex, Jordan, Taylor, Morgan, Riley, Casey, Quinn, Sam).
+See the skill's `team/ROSTER.md` for assignments and role boundaries.
+```
+
+**Update AGENTS.md whenever the project state changes.** A new agent should be able to read AGENTS.md alone and know exactly what to do.
+
+## Rule 5: Team Assignment
 
 8 team members, each with a specific job. Never assign a review task outside a member's expertise.
 
@@ -95,7 +144,7 @@ Stage 10 — Final Review (author approval)
 
 **Load persona details on demand:** Read the relevant file from `team/` when adopting a persona.
 
-## Rule 5: File Locations
+## Rule 6: File Locations
 
 ```
 SKILL DIRECTORY (this folder):   Reusable templates, personas, workflows
@@ -109,11 +158,11 @@ PROJECT DIRECTORY:                Book-specific content (outline, chapters, char
 
 **Never create book-specific files inside the skill directory.**
 
-## Rule 6: Quality Over Word Count
+## Rule 7: Quality Over Word Count
 
 Word count targets (e.g., 2,000-2,500 per chapter) are GUIDES, not gates. A tight 1,500-word chapter that earns every sentence beats a padded 2,800-word chapter with filler. See [references/house-style-higgins.md](references/house-style-higgins.md) for the author's target style.
 
-## Rule 7: Chapter Writing Cycle
+## Rule 8: Chapter Writing Cycle
 
 When writing chapters (Stage 5), follow this cycle for EACH chapter:
 
@@ -131,7 +180,7 @@ When writing chapters (Stage 5), follow this cycle for EACH chapter:
 11. Begin next chapter
 ```
 
-## Rule 8: The Perception Phase (During Reviews)
+## Rule 9: The Perception Phase (During Reviews)
 
 When performing a team review, each reviewer MUST:
 
@@ -143,7 +192,7 @@ When performing a team review, each reviewer MUST:
 
 **A clean approval with zero reservations means the reviewer wasn't looking hard enough.**
 
-## Rule 9: Review Output Format
+## Rule 10: Review Output Format
 
 **Every team review MUST produce output in this exact format.** No free-form prose. Fill in the sections:
 
@@ -187,7 +236,7 @@ When performing a team review, each reviewer MUST:
 |---|---|
 | Starting any stage | [references/stages.md](references/stages.md) |
 | Writing or reviewing prose | [references/house-style-higgins.md](references/house-style-higgins.md) — **the author's target style** |
-| Doing a team review | [references/stages.md](references/stages.md) + this file Rule 8 |
+| Doing a team review | [references/stages.md](references/stages.md) + this file Rule 9 |
 | Building a chapter brief | [templates/chapter-brief.md](templates/chapter-brief.md) |
 | Creating character profiles | [templates/character-profile.md](templates/character-profile.md) |
 | Creating setting profiles | [templates/setting-profile.md](templates/setting-profile.md) |
@@ -204,6 +253,7 @@ Create this in the project directory when starting a new book:
 
 ```
 book-name/
+├── AGENTS.md                # ALWAYS — session continuity for agent restarts
 ├── progress.md              # ALWAYS — tracks current stage and status
 ├── outline.md               # Validated chapter-by-chapter outline
 ├── story-bible.md           # Master reference document
@@ -219,7 +269,8 @@ book-name/
 ## Quick Start
 
 1. Author shares book seed → capture as Stage 0
-2. Read [references/stages.md](references/stages.md) Stage 1 section
-3. Create `progress.md` in the project directory
-4. Begin Stage 1: Concept Development
-5. Follow the Review Gate for every deliverable
+2. Create `AGENTS.md` in the project directory (Rule 4)
+3. Create `progress.md` in the project directory (Rule 3)
+4. Read [references/stages.md](references/stages.md) Stage 1 section
+5. Begin Stage 1: Concept Development
+6. Follow the Review Gate for every deliverable
