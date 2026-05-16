@@ -7,7 +7,7 @@
 
 ## What This Document Is
 
-A worked example of the Stage 5c Act Break Full-Stack Review showing the kinds of cross-chapter issues this process catches, how findings are consolidated, and how fixes are applied directly to chapter files.
+A worked example of the Stage 10 Act Break Full-Stack Review showing the kinds of cross-chapter issues this process catches, how findings are consolidated, and how fixes are applied directly to chapter files.
 
 ---
 

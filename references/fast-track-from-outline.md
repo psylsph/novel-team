@@ -4,7 +4,7 @@
 
 **Skip:** Stages 0-4 (Seed → Concept → Characters → Structure → Research)
 
-**Jump directly to:** Stage 5 (First Draft)
+**Jump directly to:** Stage 8 (First Draft)
 
 ---
 
@@ -64,11 +64,11 @@ Write in batches of 3-6 chapters (story sections), then:
 3. Check timeline alignment
 4. Continue to next batch
 
-**No multi-agent reviews until Stage 6** - keep momentum
+**No multi-agent reviews until Stage 11** - keep momentum
 
 ### Step 4: Complete First Draft
 
-Continue until outline is fully drafted. Then proceed to Stage 6 (Developmental Edit) for full team review.
+Continue until outline is fully drafted. Then proceed to Stage 11 (Developmental Edit) for full team review.
 
 ---
 
@@ -94,7 +94,7 @@ Continue until outline is fully drafted. Then proceed to Stage 6 (Developmental 
 → Too slow for existing outline. Write directly instead.
 
 **❌ Perfectionism in early chapters**  
-→ Forward motion. Editing comes in Stage 6.
+→ Forward motion. Editing comes in Stage 11.
 
 **❌ Not populating knowledge repo first**  
 → Creates continuity headaches. Spend 15 minutes upfront.

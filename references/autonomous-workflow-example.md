@@ -160,12 +160,12 @@ For each character, Alex made creative decisions based on:
 **Best for:**
 - Stage 2: Character Development
 - Stage 3: Setting & Worldbuilding
-- Stage 5: Scene Planning
+- Stage 4: Scene Planning
 - Any stage with many interconnected decisions
 
 **Not for:**
 - Stage 1: Initial concept (author's vision)
-- Stage 10: Final review (author's voice)
+- Stage 15: Final review (author's voice)
 - Any decision that changes story's core
 
 **Key indicator:** If the question requires choosing between fundamentally different story outcomes, escalate. If it's about *how* to implement an established direction, resolve autonomously.

@@ -214,7 +214,7 @@ I'll track all details for consistency."
 
 ## Example 3: First Draft Checkpoint
 
-### Stage 5: First Draft - Midpoint Check-in
+### Stage 8: First Draft - Midpoint Check-in
 
 **TEAM: Alex, author**
 
@@ -325,7 +325,7 @@ Ch 9-12 by end of week? You can do this."
 
 ## Example 4: Line Editing Session
 
-### Stage 7: Line Editing
+### Stage 12: Line Editing
 
 **TEAM: Jordan, author**
 

@@ -11,7 +11,7 @@ This is the novel-team pi skill — a novel production pipeline with 8 team pers
 - **Keep SKILL.md under 250 lines** — it's the rules card that fits in small model context. If it grows, move detail to references/
 
 ## Current Version
-4.1.0
+4.4.0
 
 ## File Responsibilities
 | File | Purpose | Loaded when |

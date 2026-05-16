@@ -8,7 +8,7 @@
 
 ## The Chapter Cycle
 
-For every chapter in Stage 5 (First Draft):
+For every chapter in Stage 8 (First Draft):
 
 ### 1. Select Next Chapter
 

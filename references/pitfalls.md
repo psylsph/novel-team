@@ -45,5 +45,5 @@ Even with a complete outline, Stage 1 (Concept Development) is mandatory. The te
 **Minimum for an existing outline:**
 1. Stage 1: Confirm genre, tone, theme, audience
 2. Stage 3: Team reviews the outline (Alex, Casey, Quinn)
-3. Stage 3b: Scene breakdown reviewed
+3. Stage 4: Scene breakdown reviewed
 4. Then write

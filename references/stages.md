@@ -2,6 +2,8 @@
 
 Load this file when entering a new stage. Each section has the full checklist and process.
 
+> **⚠️ Stages must be completed in strict numerical order: 0 → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15. Never skip or reorder stages.**
+
 ---
 
 ## Stage 0: Initial Seed
@@ -105,7 +107,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 - [ ] Subplots assigned to chapters
 - [ ] Research gaps noted
 
-**REVIEW GATE — Before proceeding to 3b:**
+**REVIEW GATE — Before proceeding to Stage 4:**
 - [ ] Alex: pacing and structure (5+ hard questions)
 - [ ] Casey: timeline and chapter sequencing
 - [ ] Quinn: key factual assumptions
@@ -116,7 +118,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 3b: Scene-by-Scene Breakdown
+## Stage 4: Scene-by-Scene Breakdown
 
 **Goal:** Expand each chapter into scene beats
 
@@ -143,7 +145,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 3c: Planning Approval
+## Stage 5: Planning Approval
 
 **Final check before writing:**
 - [ ] High-level chapter plan approved
@@ -156,7 +158,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 4: Research Deep Dive
+## Stage 6: Research Deep Dive
 
 **Goal:** Comprehensive, authentic reference material
 
@@ -178,7 +180,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 4.5: World Outline
+## Stage 7: World Outline
 
 **Goal:** Systematic worldbuilding document
 
@@ -203,7 +205,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 5: First Draft
+## Stage 8: First Draft
 
 **Goal:** Complete manuscript — one chapter at a time
 
@@ -253,7 +255,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 5b: Cross-Chapter Continuity Pass (Every 5-10 Chapters)
+## Stage 9: Cross-Chapter Continuity Pass (Every 5-10 Chapters)
 
 **When:** After every 5-10 chapters, or at act breaks, before presenting batch to author.
 
@@ -271,7 +273,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 5c: Act Break Full-Stack Review (Every Act)
+## Stage 10: Act Break Full-Stack Review (Every Act)
 
 **When:** After completing an act (~10 chapters, ~25-30K words)
 
@@ -299,7 +301,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 6: Developmental Edit
+## Stage 11: Developmental Edit
 
 **Goal:** Strengthen story, characters, structure
 
@@ -317,7 +319,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 - [ ] Author revisions applied
 - [ ] Revised draft checked by Casey
 
-**Review Gate 6.5:**
+**Review Gate 11.5:**
 - [ ] Alex: structural soundness confirmed
 - [ ] Casey: no new continuity issues
 - [ ] Quinn: factual accuracy maintained
@@ -326,7 +328,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 7: Line Editing
+## Stage 12: Line Editing
 
 **Goal:** Prose quality, flow, style
 
@@ -347,7 +349,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 8: Copyediting
+## Stage 13: Copyediting
 
 **Goal:** Technical polish and consistency
 
@@ -367,7 +369,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 9: Proofreading
+## Stage 14: Proofreading
 
 **Goal:** Final error catch — no more changes
 
@@ -383,7 +385,7 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 10: Final Review
+## Stage 15: Final Review
 
 **Goal:** Author signs off
 

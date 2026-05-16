@@ -11,8 +11,8 @@ All notable changes to the Novel Team project are documented here.
 - Separated book-specific content from reusable skill templates. Project directories now live outside the skill.
 - Added the **Review Gate** as the highest-priority rule: CREATE → REVIEW → FIX → PRESENT TO AUTHOR.
 - Added the **Perception Phase**: each reviewer must read critically, quote specific lines, raise minimum 5 hard questions.
-- Added the **Act Break Full-Stack Review** (Stage 5c) — comprehensive quality gate at act boundaries.
-- Added **Cross-Chapter Continuity Pass** (Stage 5b) — run every 5-10 chapters.
+- Added the **Act Break Full-Stack Review** (Stage 10) — comprehensive quality gate at act boundaries.
+- Added **Cross-Chapter Continuity Pass** (Stage 9) — run every 5-10 chapters.
 - Added **Stage Discipline** rules: never advance without author confirmation, Stage 1 is mandatory even for sequels.
 
 ### Team & Personas

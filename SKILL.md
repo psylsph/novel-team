@@ -2,7 +2,7 @@
 name: novel-team
 category: creative
 description: "Complete novel development toolkit with 8 professional team personas, a 16-stage writing plan with checklists, structured review workflow, progress tracking, rolling summary system, and on-demand reference loading for collaborative novel writing."
-version: 4.1.0
+version: 4.4.0
 author: Stuart
 tags: [writing, collaboration, worldbuilding, reference, workflow, review]
 ---
@@ -38,94 +38,36 @@ Never present work to the author before the team has reviewed it. "It's just a d
 
 ## Rule 2: Stage Order
 
-Stages are sequential gates. Never skip ahead. Never advance without author confirmation.
+Stages are sequential gates. **They must be completed in strict numerical order (0→1→2→3→4→5→6→7→8→9→10→11→12→13→14→15).** Never skip ahead, never reorder, never advance without author confirmation.
 
 ```
 Stage 0  — Seed captured (author provides idea)
 Stage 1  — Concept Development (MANDATORY — never skip, even for sequels)
 Stage 2  — Character Development
 Stage 3  — Story Structure (high-level chapter plan)
-Stage 3b — Scene-by-Scene Breakdown
-Stage 3c — Planning Approval (author says "ready to write")
-Stage 4  — Research Deep Dive
-Stage 4.5 — World Outline
-Stage 5  — First Draft (one chapter at a time)
-Stage 5b — Cross-Chapter Continuity Pass (every 5-10 chapters)
-Stage 5c — Act Break Full-Stack Review (every act)
-Stage 6  — Developmental Edit
-Stage 7  — Line Editing
-Stage 8  — Copyediting
-Stage 9  — Proofreading
-Stage 10 — Final Review (author approval)
+Stage 4  — Scene-by-Scene Breakdown
+Stage 5  — Planning Approval (author says "ready to write")
+Stage 6  — Research Deep Dive
+Stage 7  — World Outline
+Stage 8  — First Draft (one chapter at a time)
+Stage 9  — Cross-Chapter Continuity Pass (every 5-10 chapters)
+Stage 10 — Act Break Full-Stack Review (every act)
+Stage 11 — Developmental Edit
+Stage 12 — Line Editing
+Stage 13 — Copyediting
+Stage 14 — Proofreading
+Stage 15 — Final Review (author approval)
 ```
 
 **Loading stage details:** When entering any stage, read [references/stages.md](references/stages.md) for the full checklist and process.
 
 ## Rule 3: Progress Tracking
 
-**At the start of every project**, create `<project>/progress.md` with this format:
-
-```markdown
-# Progress: [Book Title]
-
-## Current Stage: [stage number and name]
-## Status: [what you're doing right now]
-## Completed: [list of completed stages with dates]
-## Pending Author Confirmation: [yes/no — for what]
-## Next Action: [what happens after confirmation]
-## Review Gate Status: [PASSED / PENDING / NOT YET APPLICABLE]
-```
-
-**Update progress.md after every action.** This is your memory. If you're unsure what to do next, read progress.md.
+**At the start of every project**, create `<project>/progress.md` from [templates/progress.md](templates/progress.md). **Update it after every action.** This is your memory. If you're unsure what to do next, read progress.md.
 
 ## Rule 4: Session Continuity (AGENTS.md)
 
-**At the start of every project**, create `<project>/AGENTS.md`. This file is the first thing a new agent reads when a session restarts. It tells the agent exactly what this project is, where to find the skill, and what to read to resume work.
-
-```markdown
-# AGENTS.md — [Book Title]
-
-## What This Project Is
-This is a novel being developed using the novel-team skill for pi.
-
-## How to Resume Work
-1. Read this file first
-2. Load the novel-team skill: read `~/.pi/agent/skills/novel-team/SKILL.md`
-3. Read the project status: read `progress.md` in this directory
-4. Read the rolling summary (if drafting): read `rolling-summary.md`
-5. Pick up where progress.md says you left off
-
-## Current Status
-- **Stage:** [current stage number and name]
-- **Last completed action:** [what was done last]
-- **Next action:** [what needs to happen next]
-- **Pending author confirmation:** [yes/no — for what]
-
-## Key Files
-- `progress.md` — Always read this first. Current stage, status, next action.
-- `rolling-summary.md` — Chapter-by-chapter state tracking (updated after each chapter)
-- `story-bible.md` — Master reference: characters, timeline, settings, plot threads
-- `outline.md` — Validated chapter-by-chapter outline
-- `world-outline.md` — Worldbuilding and research
-- `characters/` — Individual character profiles
-- `chapters/` — Draft chapter files
-- `concepts/seed.md` — Original book seed from the author
-
-## Skill Location
-The novel-team skill lives at: `~/.pi/agent/skills/novel-team/`
-
-The rules card is: `~/.pi/agent/skills/novel-team/SKILL.md`
-
-Stage details are in: `~/.pi/agent/skills/novel-team/references/stages.md`
-
-House style is in: `~/.pi/agent/skills/novel-team/references/house-style-higgins.md`
-
-## Team
-8 professional personas (Alex, Jordan, Taylor, Morgan, Riley, Casey, Quinn, Sam).
-See the skill's `team/ROSTER.md` for assignments and role boundaries.
-```
-
-**Update AGENTS.md whenever the project state changes.** A new agent should be able to read AGENTS.md alone and know exactly what to do.
+**At the start of every project**, create `<project>/AGENTS.md` from [templates/agents.md](templates/agents.md). This file is the first thing a new agent reads when a session restarts. **Update it whenever the project state changes.** A new agent should be able to read AGENTS.md alone and know exactly what to do.
 
 ## Rule 5: Team Assignment
 
@@ -162,9 +104,11 @@ PROJECT DIRECTORY:                Book-specific content (outline, chapters, char
 
 Word count targets (e.g., 2,000-2,500 per chapter) are GUIDES, not gates. A tight 1,500-word chapter that earns every sentence beats a padded 2,800-word chapter with filler. See [references/house-style-higgins.md](references/house-style-higgins.md) for the author's target style.
 
+**Always use `wc -w <file>` on output files** to report actual word counts. Never guess or estimate — run `wc` and report the real number. Include word counts in progress updates and when presenting deliverables to the author.
+
 ## Rule 8: Chapter Writing Cycle
 
-When writing chapters (Stage 5), follow this cycle for EACH chapter:
+When writing chapters (Stage 8), follow this cycle for EACH chapter:
 
 ```
 1. Read progress.md and rolling-summary.md
@@ -194,35 +138,9 @@ When performing a team review, each reviewer MUST:
 
 ## Rule 10: Review Output Format
 
-**Every team review MUST produce output in this exact format.** No free-form prose. Fill in the sections:
+**Every team review MUST produce output using the format in [templates/review-output.md](templates/review-output.md).** No free-form prose.
 
-```markdown
-## Team Review: [Deliverable Name]
-
-### Alex (Developmental)
-- **[Issue 1]:** "[exact quote or location]" → [specific fix]
-- **[Issue 2]:** "[exact quote or location]" → [specific fix]
-- **[Issue 3]:** "[exact quote or location]" → [specific fix]
-- **[Issue 4]:** "[exact quote or location]" → [specific fix]
-- **[Issue 5]:** "[exact quote or location]" → [specific fix]
-- Reservations: [concerns even if approving, or "None — rare"]
-
-### [Next Reviewer Name] ([Role])
-- **[Issue 1]:** "[exact quote or location]" → [specific fix]
-- ...
-- Reservations: [...]
-
----
-
-### Verdict: [PASS / FIX REQUIRED]
-### Fixes Applied:
-1. [What was fixed and where]
-2. ...
-### Author Decisions Needed:
-- [Any items that require author input, or "None"]
-```
-
-**Rules for this format:**
+**Rules for the format:**
 - Every issue has three parts: citation → diagnosis → fix
 - "[exact quote or location]" means a real quote, line reference, or page/paragraph number — never vague
 - Each reviewer must have at least 5 issues unless the work is genuinely flawless (unlikely)
