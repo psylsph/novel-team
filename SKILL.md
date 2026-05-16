@@ -142,7 +142,7 @@ See the skill's `team/ROSTER.md` for assignments and role boundaries.
 | Fact Checker | Quinn | Technical accuracy, jargon, geopolitics | Line editing, continuity |
 | Writing Coach | Sam | Process, accountability, motivation | Editorial feedback |
 
-**Load persona details on demand:** Read the relevant file from `team/` when adopting a persona.
+**Load persona details on demand:** Read `team/ROSTER.md` first, then the specific persona file. Persona files are at `team/editorial/`, `team/specialists/`, and `team/support/` — always include the `team/` prefix.
 
 ## Rule 6: File Locations
 
