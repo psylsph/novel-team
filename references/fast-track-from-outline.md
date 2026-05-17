@@ -115,5 +115,5 @@ Continue until outline is fully drafted. Then proceed to Stage 11 (Developmental
 
 ❌ Only have a concept/seed idea → Use standard workflow (Stages 0-4 first)  
 ❌ Characters feel flat/undefined → Do Stage 2 (Character Development)  
-❌ Plot has holes → Do Stage 3 (Story Structure)  
-❌ Setting needs research → Do Stage 4 (Research Deep Dive)
+❌ Plot has holes → Do Stage 5 (Story Structure)  
+❌ Setting needs research → Do Stage 3 (Research Deep Dive)

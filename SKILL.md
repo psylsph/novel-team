@@ -2,7 +2,7 @@
 name: novel-team
 category: creative
 description: "Complete novel development toolkit with 8 professional team personas, a 16-stage writing plan with checklists, structured review workflow, progress tracking, rolling summary system, and on-demand reference loading for collaborative novel writing."
-version: 4.4.0
+version: 4.5.0
 author: Stuart
 tags: [writing, collaboration, worldbuilding, reference, workflow, review]
 ---
@@ -44,11 +44,11 @@ Stages are sequential gates. **They must be completed in strict numerical order 
 Stage 0  — Seed captured (author provides idea)
 Stage 1  — Concept Development (MANDATORY — never skip, even for sequels)
 Stage 2  — Character Development
-Stage 3  — Story Structure (high-level chapter plan)
-Stage 4  — Scene-by-Scene Breakdown
-Stage 5  — Planning Approval (author says "ready to write")
-Stage 6  — Research Deep Dive
-Stage 7  — World Outline
+Stage 3  — Research Deep Dive
+Stage 4  — World Outline
+Stage 5  — Story Structure (high-level chapter plan)
+Stage 6  — Scene-by-Scene Breakdown
+Stage 7  — Planning Approval (author says "ready to write")
 Stage 8  — First Draft (one chapter at a time)
 Stage 9  — Cross-Chapter Continuity Pass (every 5-10 chapters)
 Stage 10 — Act Break Full-Stack Review (every act)

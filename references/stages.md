@@ -91,76 +91,9 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 3: Story Structure — Chapter Outline
+## Stage 3: Research Deep Dive
 
-**Goal:** Chapter count and high-level summaries
-
-**Team:** Alex (guides), Casey (continuity/timeline), author
-
-**Checklist:**
-- [ ] Structure type chosen (3-act, 7-point, etc.)
-- [ ] Major turning points identified
-- [ ] Timeline established (chronological + story-time)
-- [ ] Chapter count determined
-- [ ] Each chapter: 1-2 sentence summary (what happens, whose POV)
-- [ ] Pacing plan (tension peaks, release, chapter length targets)
-- [ ] Subplots assigned to chapters
-- [ ] Research gaps noted
-
-**REVIEW GATE — Before proceeding to Stage 4:**
-- [ ] Alex: pacing and structure (5+ hard questions)
-- [ ] Casey: timeline and chapter sequencing
-- [ ] Quinn: key factual assumptions
-- [ ] Author approved high-level plan
-- [ ] progress.md updated
-
-**Deliverable:** High-level chapter plan in project root
-
----
-
-## Stage 4: Scene-by-Scene Breakdown
-
-**Goal:** Expand each chapter into scene beats
-
-**Team:** Alex (guides), Casey (continuity), author
-
-**Checklist:**
-- [ ] Each chapter: 3-6 scene beats
-- [ ] Each scene: location, POV, purpose (plot/character/theme)
-- [ ] Scene transitions checked for flow
-- [ ] Cause-and-effect verified between scenes
-- [ ] Pacing at scene level (action vs. dialogue vs. introspection)
-- [ ] Key dialogue beats / set-piece moments noted
-- [ ] Research requirements tagged per scene
-- [ ] Continuity markers noted
-
-**REVIEW GATE — Before proceeding to draft:**
-- [ ] Alex: scene structure supports arcs
-- [ ] Casey: timeline and continuity across all scenes
-- [ ] Jordan: narrative flow
-- [ ] Author approved full breakdown
-- [ ] progress.md updated
-
-**Deliverable:** Full scene-by-scene breakdown in project root
-
----
-
-## Stage 5: Planning Approval
-
-**Final check before writing:**
-- [ ] High-level chapter plan approved
-- [ ] Scene-by-scene breakdown approved
-- [ ] Character files consistent with both plans
-- [ ] World outline and research accessible
-- [ ] Rolling summary initialized
-- [ ] Author says: "Ready to write"
-- [ ] progress.md updated
-
----
-
-## Stage 6: Research Deep Dive
-
-**Goal:** Comprehensive, authentic reference material
+**Goal:** Comprehensive, authentic reference material — complete this BEFORE structuring the story
 
 **Team:** Riley (leads), Quinn (verifies), Casey (integrates)
 
@@ -180,9 +113,9 @@ Load this file when entering a new stage. Each section has the full checklist an
 
 ---
 
-## Stage 7: World Outline
+## Stage 4: World Outline
 
-**Goal:** Systematic worldbuilding document
+**Goal:** Systematic worldbuilding document — complete this BEFORE structuring the story
 
 **Team:** Riley (presents findings), Alex (story context), Casey (cross-references)
 
@@ -202,6 +135,74 @@ Load this file when entering a new stage. Each section has the full checklist an
 - [ ] progress.md updated
 
 **Deliverable:** World outline (`world-outline.md`)
+
+---
+
+## Stage 5: Story Structure — Chapter Outline
+
+**Goal:** Chapter count and high-level summaries, informed by research and world-building
+
+**Team:** Alex (guides), Casey (continuity/timeline), author
+
+**Checklist:**
+- [ ] Structure type chosen (3-act, 7-point, etc.)
+- [ ] Major turning points identified
+- [ ] Timeline established (chronological + story-time)
+- [ ] Chapter count determined
+- [ ] Each chapter: 1-2 sentence summary (what happens, whose POV)
+- [ ] Pacing plan (tension peaks, release, chapter length targets)
+- [ ] Subplots assigned to chapters
+- [ ] Research gaps noted (return to Stage 3 if critical gaps found)
+
+**REVIEW GATE — Before proceeding to Stage 6:**
+- [ ] Alex: pacing and structure (5+ hard questions)
+- [ ] Casey: timeline and chapter sequencing
+- [ ] Quinn: key factual assumptions
+- [ ] Author approved high-level plan
+- [ ] progress.md updated
+
+**Deliverable:** High-level chapter plan in project root
+
+---
+
+## Stage 6: Scene-by-Scene Breakdown
+
+**Goal:** Expand each chapter into scene beats
+
+**Team:** Alex (guides), Casey (continuity), author
+
+**Checklist:**
+- [ ] Each chapter: 3-6 scene beats
+- [ ] Each scene: location, POV, purpose (plot/character/theme)
+- [ ] Scene transitions checked for flow
+- [ ] Cause-and-effect verified between scenes
+- [ ] Pacing at scene level (action vs. dialogue vs. introspection)
+- [ ] Key dialogue beats / set-piece moments noted
+- [ ] Research requirements tagged per scene
+- [ ] Continuity markers noted
+
+**REVIEW GATE — Before proceeding to Stage 7:**
+- [ ] Alex: scene structure supports arcs
+- [ ] Casey: timeline and continuity across all scenes
+- [ ] Jordan: narrative flow
+- [ ] Author approved full breakdown
+- [ ] progress.md updated
+
+**Deliverable:** Full scene-by-scene breakdown in project root
+
+---
+
+## Stage 7: Planning Approval
+
+**Final check before writing:**
+- [ ] Research repository complete and accessible
+- [ ] World outline complete and approved
+- [ ] High-level chapter plan approved
+- [ ] Scene-by-scene breakdown approved
+- [ ] Character files consistent with all plans
+- [ ] Rolling summary initialized
+- [ ] Author says: "Ready to write"
+- [ ] progress.md updated
 
 ---
 

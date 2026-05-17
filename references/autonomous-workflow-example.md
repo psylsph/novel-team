@@ -159,8 +159,8 @@ For each character, Alex made creative decisions based on:
 
 **Best for:**
 - Stage 2: Character Development
-- Stage 3: Setting & Worldbuilding
-- Stage 4: Scene Planning
+- Stage 4: Setting & Worldbuilding
+- Stage 6: Scene Planning
 - Any stage with many interconnected decisions
 
 **Not for:**

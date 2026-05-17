@@ -22,7 +22,7 @@ The story bible consolidates outline + character files + research into one docum
 
 ## Pitfall #3: "Outline Exists" ≠ "Outline Is Valid"
 
-An outline that exists isn't necessarily ready to write from. If it's the author's first draft, treat it as entering at Stage 3 — review, validate, fill holes, get confirmation.
+An outline that exists isn't necessarily ready to write from. If it's the author's first draft, treat it as entering at Stage 5 — review, validate, fill holes, get confirmation.
 
 See [fast-track-from-outline.md](fast-track-from-outline.md) for accelerated workflow with complete outlines.
 
@@ -44,6 +44,6 @@ Even with a complete outline, Stage 1 (Concept Development) is mandatory. The te
 
 **Minimum for an existing outline:**
 1. Stage 1: Confirm genre, tone, theme, audience
-2. Stage 3: Team reviews the outline (Alex, Casey, Quinn)
-3. Stage 4: Scene breakdown reviewed
+2. Stage 5: Team reviews the outline (Alex, Casey, Quinn)
+3. Stage 6: Scene breakdown reviewed
 4. Then write
