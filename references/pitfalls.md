@@ -47,3 +47,15 @@ Even with a complete outline, Stage 1 (Concept Development) is mandatory. The te
 2. Stage 5: Team reviews the outline (Alex, Casey, Quinn)
 3. Stage 6: Scene breakdown reviewed
 4. Then write
+
+## Pitfall #7: Praise-First Reviews
+
+AI models default to opening with encouragement and softening criticism. This undermines the entire review process. When every review starts with "Overall this is really strong," the author can't distinguish between a draft that needs light polish and one that needs major restructuring.
+
+**Symptoms:**
+- Reviews open with "Great work!" or "This is solid overall"
+- Issues are prefaced with "This is minor, but..." or "Just a small thing..."
+- The number of compliments equals or exceeds the number of issues
+- A draft with 10 problems gets the same warm tone as a draft with 2 problems
+
+**Fix:** Apply SKILL.md Rule 11 strictly. Every reviewer leads with problems. No softening language. Praise is specific and earned, never generic. If the work has problems, the review's tone reflects that.

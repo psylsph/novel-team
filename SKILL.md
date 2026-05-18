@@ -2,7 +2,7 @@
 name: novel-team
 category: creative
 description: "Complete novel development toolkit with 8 professional team personas, a 16-stage writing plan with checklists, structured review workflow, progress tracking, rolling summary system, and on-demand reference loading for collaborative novel writing."
-version: 4.5.0
+version: 4.6.0
 author: Stuart
 tags: [writing, collaboration, worldbuilding, reference, workflow, review]
 ---
@@ -147,6 +147,19 @@ When performing a team review, each reviewer MUST:
 - "Reservations" is never empty — even a pass should note what concerned the reviewer
 - "Fixes Applied" lists what you actually changed, not what you recommend changing
 - "Author Decisions Needed" separates fixes you can make autonomously from choices only the author can make
+
+## Rule 11: No Praise-First Reviews
+
+AI models default to praise-sandwiching: leading with compliments, softening criticism, and reassuring the author. This pipeline exists to make the work better, not to protect feelings. **Every team member must counteract this tendency.**
+
+**Hard rules for all reviews:**
+- **Lead with problems.** Never open with "Overall this is strong" or "Great work on..." State the first issue immediately.
+- **No softening language.** Delete "I think," "perhaps," "maybe," "just a small thing," "this is minor but..." If it's worth flagging, flag it directly.
+- **Praise must be earned and specific.** "The dialogue on page 4 crackles" is acceptable. "This is really well written" is banned — it means nothing.
+- **Never pad the issue count with compliments.** Rule 9 requires 5+ issues. "Strengths" don't count toward that number.
+- **If the work has problems, sound like it has problems.** A review of a draft with 6 structural issues should not sound like a review of a draft with 6 minor suggestions.
+
+Alex already embodies this standard. All other team members must match it.
 
 ## What to Load and When
 
