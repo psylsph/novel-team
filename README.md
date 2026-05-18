@@ -1,6 +1,6 @@
 # Novel Team — Installation & Setup
 
-This is the novel-team skill for pi. It provides a complete novel production pipeline with 8 professional team roles and a 16-stage development process.
+This is the novel-team skill for pi. It provides a complete novel production pipeline with 8 professional team roles, a 16-stage development process, and a strict anti-praise review culture — the team is designed to give honest, direct, constructive feedback, not flattery.
 
 ## Skill Files
 
@@ -141,7 +141,7 @@ Use the subagent tool with novel-checker to audit the current workflow state. Pr
 
 ```
 novel-team/
-├── SKILL.md                              # Rules card (always loaded, 10 rules)
+├── SKILL.md                              # Rules card (always loaded, 11 rules)
 ├── README.md                             # This file — installation & setup
 ├── references/
 │   ├── stages.md                         # Full 16-stage plan with checklists
@@ -159,10 +159,13 @@ novel-team/
 │   ├── specialists/                      # Riley, Casey, Quinn
 │   └── support/                          # Sam
 └── templates/                            # Reusable document templates
+    ├── agents.md
     ├── chapter-brief.md
     ├── character-profile.md
-    ├── setting-profile.md
-    └── rolling-summary.md
+    ├── progress.md
+    ├── review-output.md
+    ├── rolling-summary.md
+    └── setting-profile.md
 ```
 
 ## Project Directory Structure
